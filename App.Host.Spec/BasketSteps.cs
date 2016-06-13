@@ -1,14 +1,16 @@
 ﻿using TechTalk.SpecFlow;
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Product.Interfaces;
+using Price.Interfaces;
 
 namespace Basket.Host.Spec
 {
     [Binding]
     public sealed class BasketSteps
     {
-        Product.Provider ProductProvider { get; set; }
-        Price.Provider PriceProvider { get; set; }
+        IProductProvider ProductProvider { get; set; }
+        IPriceProvider PriceProvider { get; set; }
         App.Basket Basket { get; set; }
         
         public BasketSteps()

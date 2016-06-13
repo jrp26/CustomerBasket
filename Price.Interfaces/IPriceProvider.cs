@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Price
+namespace Price.Interfaces
 {
     public interface IPriceProvider
     {

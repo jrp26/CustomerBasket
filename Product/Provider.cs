@@ -1,8 +1,9 @@
 ﻿using System.Collections.Generic;
+using Product.Interfaces;
 
 namespace Product
 {
-    public sealed class Provider
+    public sealed class Provider : IProductProvider
     {
         private Dictionary<string, Model.Product> Products {get; set; }
 

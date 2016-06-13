@@ -102,6 +102,10 @@
       <Project>{93157b4f-312f-45af-9577-3bce0c8d1b99}</Project>
       <Name>Price</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Product.Interfaces\Product.Interfaces.csproj">
+      <Project>{49f138a4-42a7-451c-a7e6-b86124ed21f9}</Project>
+      <Name>Product.Interfaces</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Product.Model\Product.Model.csproj">
       <Project>{8f95ef7d-8bc6-480c-b50f-66a50e6d037b}</Project>
       <Name>Product.Model</Name>
