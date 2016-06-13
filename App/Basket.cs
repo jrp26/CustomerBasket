@@ -21,10 +21,10 @@ namespace App
         
         public void CalculateTotal()
         {
-            IList<Price.Entities.Product> products = new List<Price.Entities.Product>();
+            IList<Price.Model.Product> products = new List<Price.Model.Product>();
             foreach(BasketItem bi in BasketItems)
             {
-                products.Add(new Price.Entities.Product(bi.ProductId, bi.Quantity));
+                products.Add(new Price.Model.Product(bi.ProductId, bi.Quantity));
             }
             Total = PriceProvider.Calculate(products).Total;
         }

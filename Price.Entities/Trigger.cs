@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Price.Entities
+namespace Price.Model
 {
     public sealed class Trigger
     {

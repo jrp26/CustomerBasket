@@ -18,9 +18,9 @@ namespace Basket.Host.Spec
 
         private void Initilise()
         {
-            Product.Entities.Product prodBread = new Product.Entities.Product(1, "bread");
-            Product.Entities.Product prodButter = new Product.Entities.Product(2, "butter");
-            Product.Entities.Product prodMilk = new Product.Entities.Product(3, "milk");
+            Product.Model.Product prodBread = new Product.Model.Product(1, "bread");
+            Product.Model.Product prodButter = new Product.Model.Product(2, "butter");
+            Product.Model.Product prodMilk = new Product.Model.Product(3, "milk");
 
             // Initialise available products:
             ProductProvider = new Product.Provider();
@@ -30,13 +30,13 @@ namespace Basket.Host.Spec
 
             // Initialise available prices:
             PriceProvider = new Price.Provider();
-            PriceProvider.AddCost(new Price.Entities.Cost(prodBread.Id, 1));
-            PriceProvider.AddCost(new Price.Entities.Cost(prodButter.Id, 0.8));
-            PriceProvider.AddCost(new Price.Entities.Cost(prodMilk.Id, 1.15));
+            PriceProvider.AddCost(new Price.Model.Cost(prodBread.Id, 1));
+            PriceProvider.AddCost(new Price.Model.Cost(prodButter.Id, 0.8));
+            PriceProvider.AddCost(new Price.Model.Cost(prodMilk.Id, 1.15));
 
             // Intialise available offers:
-            PriceProvider.AddOffer(new Price.Entities.Offer("Buy 2 butter and get a Bread at 50% off", new Price.Entities.Trigger(new List<Price.Entities.Product>() { new Price.Entities.Product(prodButter.Id, 2), new Price.Entities.Product(prodBread.Id, 1) }), new Price.Entities.Reward(0.5)));
-            PriceProvider.AddOffer(new Price.Entities.Offer("Buy 3 milk get the 4th milk for free", new Price.Entities.Trigger(new List<Price.Entities.Product>() { new Price.Entities.Product(prodMilk.Id, 3) }), new Price.Entities.Reward(1.15)));
+            PriceProvider.AddOffer(new Price.Model.Offer("Buy 2 butter and get a Bread at 50% off", new Price.Model.Trigger(new List<Price.Model.Product>() { new Price.Model.Product(prodButter.Id, 2), new Price.Model.Product(prodBread.Id, 1) }), new Price.Model.Reward(0.5)));
+            PriceProvider.AddOffer(new Price.Model.Offer("Buy 3 milk get the 4th milk for free", new Price.Model.Trigger(new List<Price.Model.Product>() { new Price.Model.Product(prodMilk.Id, 3) }), new Price.Model.Reward(1.15)));
 
             Basket = new App.Basket(PriceProvider);
         }

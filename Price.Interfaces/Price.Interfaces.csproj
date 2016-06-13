@@ -39,9 +39,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Price.Entities\Price.Entities.csproj">
+    <ProjectReference Include="..\Price.Entities\Price.Model.csproj">
       <Project>{64b8df1a-078a-49c3-ba5b-b5efeb79f5e5}</Project>
-      <Name>Price.Entities</Name>
+      <Name>Price.Model</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

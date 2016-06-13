@@ -4,17 +4,17 @@ namespace Price.Evaluators
 {
     public sealed class CostEvaluator : IEvaluator
     {
-        Entities.Cost Cost { get; set; }
+        Model.Cost Cost { get; set; }
 
-        public CostEvaluator(Entities.Cost cost)
+        public CostEvaluator(Model.Cost cost)
         {
             Cost = cost;
         }
 
-        public double Evaluate(IList<Entities.Product> products)
+        public double Evaluate(IList<Model.Product> products)
         {
             double response = 0;
-            foreach(Entities.Product p in products)
+            foreach(Model.Product p in products)
             {
                 if(p.ProductId == Cost.ProductId)
                 {

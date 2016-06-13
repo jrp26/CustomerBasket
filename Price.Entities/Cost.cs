@@ -1,5 +1,5 @@
 ﻿
-namespace Price.Entities
+namespace Price.Model
 {
     public sealed class Cost
     {

@@ -4,8 +4,8 @@ namespace Price
 {
     public interface IPriceProvider
     {
-        void AddCost(Entities.Cost cost);
-        void AddOffer(Entities.Offer offer);
-        Entities.Quote Calculate(IList<Entities.Product> products);
+        void AddCost(Model.Cost cost);
+        void AddOffer(Model.Offer offer);
+        Model.Quote Calculate(IList<Model.Product> products);
     }
 }

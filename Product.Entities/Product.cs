@@ -1,5 +1,5 @@
 ﻿
-namespace Product.Entities
+namespace Product.Model
 {
     public sealed class Product
     {

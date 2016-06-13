@@ -90,9 +90,9 @@
       <Project>{51b0f634-536c-48b9-a3d3-68fa9768f1e8}</Project>
       <Name>App</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Price.Entities\Price.Entities.csproj">
+    <ProjectReference Include="..\Price.Entities\Price.Model.csproj">
       <Project>{64b8df1a-078a-49c3-ba5b-b5efeb79f5e5}</Project>
-      <Name>Price.Entities</Name>
+      <Name>Price.Model</Name>
     </ProjectReference>
     <ProjectReference Include="..\Price.Interfaces\Price.Interfaces.csproj">
       <Project>{3ec37bae-3491-407b-808d-0243828586b3}</Project>
@@ -102,9 +102,9 @@
       <Project>{93157b4f-312f-45af-9577-3bce0c8d1b99}</Project>
       <Name>Price</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Product.Entities\Product.Entities.csproj">
+    <ProjectReference Include="..\Product.Entities\Product.Model.csproj">
       <Project>{8f95ef7d-8bc6-480c-b50f-66a50e6d037b}</Project>
-      <Name>Product.Entities</Name>
+      <Name>Product.Model</Name>
     </ProjectReference>
     <ProjectReference Include="..\Product\Product.csproj">
       <Project>{e0d41d0f-1799-49e6-ab80-0396046f3b59}</Project>

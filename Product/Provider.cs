@@ -4,19 +4,19 @@ namespace Product
 {
     public sealed class Provider
     {
-        private Dictionary<string, Entities.Product> Products {get; set; }
+        private Dictionary<string, Model.Product> Products {get; set; }
 
         public Provider()
         {
-            Products = new Dictionary<string, Entities.Product>();
+            Products = new Dictionary<string, Model.Product>();
         }
 
-        public void Add(Entities.Product product)
+        public void Add(Model.Product product)
         {
             Products.Add(product.Name, product);
         }
 
-        public Entities.Product Find(string name)
+        public Model.Product Find(string name)
         {
             return Products[name];
         }

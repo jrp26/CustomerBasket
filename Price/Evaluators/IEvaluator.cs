@@ -4,6 +4,6 @@ namespace Price.Evaluators
 {
     interface IEvaluator
     {
-        double Evaluate(IList<Entities.Product> products);
+        double Evaluate(IList<Model.Product> products);
     }
 }

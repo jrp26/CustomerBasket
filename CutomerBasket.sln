@@ -9,9 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.Host.Spec", "App.Host.S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Product", "Product\Product.csproj", "{E0D41D0F-1799-49E6-AB80-0396046F3B59}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Price.Entities", "Price.Entities\Price.Entities.csproj", "{64B8DF1A-078A-49C3-BA5B-B5EFEB79F5E5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Price.Model", "Price.Entities\Price.Model.csproj", "{64B8DF1A-078A-49C3-BA5B-B5EFEB79F5E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Product.Entities", "Product.Entities\Product.Entities.csproj", "{8F95EF7D-8BC6-480C-B50F-66A50E6D037B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Product.Model", "Product.Entities\Product.Model.csproj", "{8F95EF7D-8BC6-480C-B50F-66A50E6D037B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Price.Interfaces", "Price.Interfaces\Price.Interfaces.csproj", "{3EC37BAE-3491-407B-808D-0243828586B3}"
 EndProject

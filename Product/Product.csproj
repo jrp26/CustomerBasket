@@ -39,9 +39,9 @@
     <Compile Include="Provider.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Product.Entities\Product.Entities.csproj">
+    <ProjectReference Include="..\Product.Entities\Product.Model.csproj">
       <Project>{8f95ef7d-8bc6-480c-b50f-66a50e6d037b}</Project>
-      <Name>Product.Entities</Name>
+      <Name>Product.Model</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
