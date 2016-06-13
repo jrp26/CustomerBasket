@@ -42,7 +42,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Price.Entities\Price.Model.csproj">
+    <ProjectReference Include="..\Price.Model\Price.Model.csproj">
       <Project>{64b8df1a-078a-49c3-ba5b-b5efeb79f5e5}</Project>
       <Name>Price.Model</Name>
     </ProjectReference>
